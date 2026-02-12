@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    to left,
+    #cdd1ff 30%,
+    #ffffff 60%
+  );
+}
+
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: transparent;
+  box-shadow: none;
+
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.desc {
+  margin: 20px 0;
+}
+
+.hero-image img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 14px 28px;
+  border: 2px solid blue;
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+
+  color: blue;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Section umum */
+.section {
+  padding: 80px;
+}
+
+.section.center {
+  text-align: center;
+}
+
+.section-desc {
+  margin: 10px 0 40px;
+}
+
+/* Tentang */
+.tentang-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tentang-text {
+  max-width: 520px;
+}
+
+.tentang-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.tentang-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.tentang-logo img {
+  width: 350px;
+}
+
+/* Produk */
+.produk-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  width: 260px;
+  height: 380px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.img-produk {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.img-produk img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0 !important;
+  display: block;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.btn-small {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Efek klik tombol utama */
+.btn:active {
+  background: blue;
+  color: white;
+  transform: scale(0.97);
+}
+
+/* Efek klik tombol kecil */
+.btn-small:active {
+  background: #001aff;
+  transform: scale(0.95);
+}
+
+/* Kontak */
+.kontak-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.kontak-info {
+  flex: 1;
+}
+
+.info-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.info-box img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.kontak-form {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: fit-content;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+.kontak-form input,
+.kontak-form textarea {
+  padding: 12px;
+  border: 2px solid blue;
+}
+
+.kontak-form on {
+  background: blue;
+  color: white;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.kontak-form button {
+  background: blue;
+  color: white;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #aaa;
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.sosial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.icon-sosial {
+  display: flex;
+  gap: 25px;
+}
+
+.icon-sosial a {
+  font-size: 32px;
+  color: black;
+  transition: 0.2s;
+}
+
+.icon-sosial a:hover {
+  opacity: 0.7;
+}
+
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-image img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .section {
+    padding: 60px 40px;
+  }
+
+  .tentang-container {
+    gap: 40px;
+  }
+
+  .tentang-logo img {
+    width: 280px;
+  }
+
+  .produk-grid {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-image img {
+    width: 260px;
+    height: 260px;
+    margin-top: 20px;
+  }
+
+  /* Tentang */
+  .tentang-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tentang-logo img {
+    width: 220px;
+    margin-top: 20px;
+  }
+
+  /* Produk */
+  .produk-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  /* Kontak */
+  .kontak-container {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .sosial {
+    align-items: center;
+  }
+}
+
+/* Mobile kecil */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .tentang-text h2 {
+    font-size: 32px;
+  }
+
+  .tentang-text p {
+    font-size: 16px;
+  }
+}
+
+/* Kontainer slider */
+.slider-container {
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+/* Produk slider horizontal */
+.produk-slider {
+  display: flex;
+  gap: 30px;             /* jarak antar card horizontal */
+  min-width: max-content; /* supaya card tidak wrap */
+}
+
+/* Card produk */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  flex-shrink: 0;        /* jangan mengecil saat slider */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;         /* tinggi card tetap */
+}
+
+/* Card image */
+.card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Tombol kecil */
+.btn-small {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.btn-small:active {
+  background: #001aff;
+  transform: scale(0.95);
+}
+
+/* Scrollbar minimalis */
+.slider-container::-webkit-scrollbar {
+  height: 8px;
+}
+.slider-container::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+.slider-container::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+}
